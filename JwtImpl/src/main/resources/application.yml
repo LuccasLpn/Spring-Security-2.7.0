@@ -1,0 +1,18 @@
+server:
+  error:
+    include-stacktrace: on_param
+  servlet:
+    context-path: /api/jwt
+spring:
+  application:
+    name: jwt-implementation
+  datasource:
+    url: jdbc:postgresql://localhost:5492/jwt_implementation?&createDatabaseIfNotExist=true
+    username: master
+    password: master
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: 8pxTH7h8yk@8#jAZjDGaHv%d%fWqUr9zR!4WTzbJ
+  expiration: 19999999
